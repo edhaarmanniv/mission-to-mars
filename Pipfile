@@ -9,8 +9,10 @@ verify_ssl = true
 pandas = "*"
 pymongo = "*"
 selenium = "*"
-bs4 = "*"
 requests = "*"
+beautifulsoup4 = "*"
+flask = "*"
+lxml = "*"
 
 [requires]
 python_version = "3.7"
