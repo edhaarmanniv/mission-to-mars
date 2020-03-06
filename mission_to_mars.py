@@ -56,11 +56,11 @@ def scrape():
     mars_table_container = space_soup.body.find_all(
         "table", id="tablepress-p-mars-no-2"
     )[0]
+
     mars_info_html = (
         pd.read_html(str(mars_table_container))[0]
         .rename(columns={0: "Description", 1: "Value"})
-        .set_index("Description")
-        .to_html(justify="left")
+        .to_html(justify="left", index=False)
     )
 
     # MARS HEMISPHERES

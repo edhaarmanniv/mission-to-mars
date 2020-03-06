@@ -20,12 +20,14 @@
         <h5>{{mars_info.nasa_news.title}}</h5>
         {{mars_info.nasa_news.desc}}
     </div>
+    <br>
 
     <!-- Featured Image and Facts Table -->
     <div class="container">
         <div class="row">
             <div class="container col-8">
                 <h3>Featured Mars Image</h3>
+                <br>
                 <img src="{{mars_info.jpl_featured_image}}" alt="featured-image" class="img-responsive"
                     style="max-width: 100%; max-height: auto;">
             </div>
@@ -35,6 +37,8 @@
                     <h3>Current Weather on Mars</h3>
                     {{mars_info.weather_data}}
                 </div>
+                <br>
+                <br>
                 <div class="row">
                     <h3>Mars Facts</h3>
                     {{mars_info.mars_info | safe}}
@@ -42,15 +46,35 @@
             </div>
         </div>
     </div>
+    <br>
 
     <div class="container">
+        <h2 class="text-center">Mars Hemispheres</h2>
+        <br>
         <div class="row">
-            <div class="col-6"></div>
-            <div class="col-6"></div>
+            <div class="col-6">
+                <h3>{{mars_info.hemisphere_images[0].title}}</h3>
+                <img src="{{mars_info.hemisphere_images[0].image_url}}" alt="" class="img-responsive"
+                    style="max-width: 100%; max-height: auto;">
+            </div>
+            <div class="col-6">
+                <h3>{{mars_info.hemisphere_images[1].title}}</h3>
+                <img src="{{mars_info.hemisphere_images[1].image_url}}" alt="" class="img-responsive"
+                    style="max-width: 100%; max-height: auto;">
+            </div>
         </div>
+        <br>
         <div class="row">
-            <div class="col-6"></div>
-            <div class="col-6"></div>
+            <div class="col-6">
+                <h3>{{mars_info.hemisphere_images[2].title}}</h3>
+                <img src="{{mars_info.hemisphere_images[2].image_url}}" alt="" class="img-responsive"
+                    style="max-width: 100%; max-height: auto;">
+            </div>
+            <div class="col-6">
+                <h3>{{mars_info.hemisphere_images[3].title}}</h3>
+                <img src="{{mars_info.hemisphere_images[3].image_url}}" alt="" class="img-responsive"
+                    style="max-width: 100%; max-height: auto;">
+            </div>
         </div>
     </div>
 
