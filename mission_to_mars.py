@@ -54,7 +54,7 @@ def scrape():
     space_soup = make_soup(SPACE_FACTS_URL)
 
     mars_table_container = space_soup.body.find_all(
-        "table", id="tablepress-p-mars-no-2"
+        "table", id="tablepress-p-mars"
     )[0]
 
     mars_info_html = (
